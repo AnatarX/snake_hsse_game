@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Змейка</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Игра «Змейка»</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><button data-tab="about" class="tab-btn">Об игре</button></li>
+      <li><button data-tab="play" class="tab-btn">Играть</button></li>
+      <li><button data-tab="scores" class="tab-btn">Результаты</button></li>
+    </ul>
+  </nav>
+
+  <main id="workspace">
+    <div id="tab-about" class="tab-content">
+      <p>Змейка — классическая игра, цель которой управлять змейкой
+      и собирать пищу, не сталкиваясь с границами и собственным телом.</p>
+    </div>
+    <div id="tab-play" class="tab-content">
+    </div>
+    <div id="tab-scores" class="tab-content">
+  <div class="controls">
+    <label>Показывать:
+      <select id="rows-select">
+        <option value="10">10</option>
+        <option value="25">25</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+      </select>
+    </label>
+  </div>
+  <table id="scores-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Имя</th>
+        <th class="sortable" data-col="score">Очки</th>
+        <th class="sortable" data-col="time">Дата</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Курс веб-разработки</p>
+  </footer>
+
+  <script src="game.js" type="module"></script>
+</body>
+</html>
