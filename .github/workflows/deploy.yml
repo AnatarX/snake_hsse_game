@@ -31,6 +31,6 @@ jobs:
         with:
           project: "anatarx-snake-hsse-15"
           entrypoint: "backend/kv.ts"
-          root: ""
+          root: "frontend"
           
           
